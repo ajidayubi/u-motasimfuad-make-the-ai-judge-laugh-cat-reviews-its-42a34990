@@ -21,7 +21,7 @@ REVIEW = (
     "screamed, so clearly management is not ready for honest feedback."
 )
 
-OUTPUT_PATH = "/output/entry.txt"
+OUTPUT_PATH = os.environ.get("MAKEFUN_OUTPUT_PATH", "/output/entry.txt")
 
 
 def validate(text):
